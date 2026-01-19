@@ -1,0 +1,31 @@
+TECH STACK:
+    Backend: python+ FastAPI
+   Me AI Model: dGemma (local, offline)
+    Frontend: React (web app)
+    Database: None (temporary memory only)
+    Deployment: Local machine
+
+
+SYSTEM ARCHITECTURE:
+    Doctor → Web App → Backend API → MedGemma Model → Backend → Web App → Doctor
+
+
+WHY THESE CHOICES:
+    Python: Best for AI and fast development
+    FastAPI: Simple and fast API framework
+    MedGemma: Medical AI, open-weight, offline
+    React: Easy and fast UI development
+    Local deployment: Protects patient privacy
+
+
+API ENDPOINTS:
+    POST /generate-report
+    Input: doctor notes (text)
+    Output: structured medical report
+
+
+SECURITY & PRIVACY:
+    No cloud storage
+    No external APIs
+    All data stays on local machine
+
