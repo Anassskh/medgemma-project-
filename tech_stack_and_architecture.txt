@@ -1,6 +1,6 @@
 TECH STACK:
     Backend: python+ FastAPI
-   Me AI Model: dGemma (local, offline)
+    AI Model: MedGemma (local, offline)
     Frontend: React (web app)
     Database: None (temporary memory only)
     Deployment: Local machine
