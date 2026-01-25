@@ -1,0 +1,104 @@
+.note-input-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.section-header h2 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.char-count {
+  background-color: #e8f4ff;
+  color: #4a90e2;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.input-wrapper {
+  position: relative;
+  flex-grow: 1;
+}
+
+.note-textarea {
+  width: 100%;
+  min-height: 300px;
+  padding: 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  background-color: white;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.note-textarea:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.note-textarea:disabled {
+  background-color: #f9f9f9;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.textarea-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1;
+  padding: 20px;
+}
+
+.hint-text {
+  color: #95a5a6;
+  font-size: 0.95rem;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.input-hint {
+  margin-top: 15px;
+  padding: 12px;
+  background-color: #fff9e6;
+  border-left: 4px solid #ffcc00;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.input-hint strong {
+  color: #e67e22;
+}
+
+.note-textarea::placeholder {
+  color: #aaa;
+  font-size: 0.95rem;
+}

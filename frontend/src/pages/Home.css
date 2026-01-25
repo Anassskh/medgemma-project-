@@ -1,0 +1,41 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px; /* Or whatever fits NoteInput/ReportOutput max-width */
+  margin: 0 auto;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.generate-btn {
+  background-color: #007bff; /* Primary blue */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+}
+
+.generate-btn:hover:not(:disabled) {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+}
+
+.generate-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.generate-btn:disabled {
+  background-color: #a0c4ff;
+  cursor: not-allowed;
+  box-shadow: none;
+}
